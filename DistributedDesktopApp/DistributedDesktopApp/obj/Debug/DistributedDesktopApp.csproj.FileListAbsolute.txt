@@ -1,0 +1,111 @@
+C:\Users\plavelle\Documents\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe.config
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\ipp.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe.config
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.pdb
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DevDefined.OAuth.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.LinqExtender.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.PlatformService.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.LinqExtender.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.PlatformService.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.Main.resources
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.OAuthPopup.resources
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.Properties.Resources.resources
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.csproj.GenerateResource.Cache
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.exe
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.pdb
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe.config
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.exe
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.pdb
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\ipp.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.pdb
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DevDefined.OAuth.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.LinqExtender.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.PlatformService.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.LinqExtender.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.PlatformService.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.csprojResolveAssemblyReference.cache
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.Main.resources
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.OAuthPopup.resources
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.Properties.Resources.resources
+C:\Users\plavelle\Documents\Presentations\MigrationWebinar\Sample Apps\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.csproj.GenerateResource.Cache
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe.config
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.exe
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.pdb
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\ipp.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.pdb
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DevDefined.OAuth.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Core.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Data.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.DataService.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Diagnostics.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Exception.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.LinqExtender.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.PlatformService.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.QueryFilter.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Retry.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Security.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Utility.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Core.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Data.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.DataService.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Diagnostics.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Exception.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.LinqExtender.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.PlatformService.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.QueryFilter.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Retry.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Security.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Intuit.Ipp.Utility.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.csprojResolveAssemblyReference.cache
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.Main.resources
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.OAuthPopup.resources
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.Properties.Resources.resources
+C:\Users\DevAdmin\Desktop\OAuthHangoutSamples-master\OAuthHangoutSamples-master\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.csproj.GenerateResource.Cache
+C:\Users\nshrivastava\Documents\GitHub\DotnetDesktopApp\DistributedDesktopApp\DistributedDesktopApp\bin\Debug\DistributedDesktopApp.exe.config
+C:\Users\nshrivastava\Documents\GitHub\DotnetDesktopApp\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.exe
+C:\Users\nshrivastava\Documents\GitHub\DotnetDesktopApp\DistributedDesktopApp\DistributedDesktopApp\obj\Debug\DistributedDesktopApp.pdb
