@@ -1,7 +1,8 @@
 OAuthHangoutSamples
 ===================
 
-Samples from the IPP Google Hangout covering OAuth
+Samples from the IPP Google Hangout covering OAuth.
+Use the latest IE browser version to test this.
 
 
 Before Starting
