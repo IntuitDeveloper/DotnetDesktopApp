@@ -4,9 +4,10 @@
         <name>Intuit.Ipp.Security</name>
     </assembly>
     <members>
-        <member name="T:Intuit.Ipp.Security.OAuthRequestValidator">
+        <member name="T:Intuit.Ipp.Security.NamespaceDoc">
             <summary>
-            OAuth implementation for Request validate contract.
+            Intuit.Ipp.Security consists of classes that are required to set security credentials to connect with 
+            Intuit services. By default it provides OAuth and user name validators. It can also use other Authorize methods such as SAML, OpenID, etc., to validate Intuit service requests.
             </summary>
         </member>
         <member name="T:Intuit.Ipp.Security.IRequestValidator">
@@ -20,6 +21,63 @@
             </summary>
             <param name="webRequest">The web request.</param>
             <param name="requestBody">The request body.</param>
+        </member>
+        <member name="T:Intuit.Ipp.Security.OAuth2RequestValidator">
+            <summary>
+            OAuth implementation for Request validate contract.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.Security.OAuth2RequestValidator.AuthorizationHeader">
+            <summary>
+            The Authorization Header constant.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.Security.OAuth2RequestValidator.oauthSignatureMethod">
+            <summary>
+            The O auth signature method.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.Security.OAuth2RequestValidator.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Intuit.Ipp.Security.OAuth2RequestValidator"/> class.
+            </summary>
+            <param name="accessToken">The bearer access token.</param>        
+        </member>
+        <member name="P:Intuit.Ipp.Security.OAuth2RequestValidator.AccessToken">
+            <summary>
+            Gets or sets the access token.
+            </summary>
+            <value>
+            The access token.
+            </value>
+        </member>
+        <member name="P:Intuit.Ipp.Security.OAuth2RequestValidator.AdditionalParameters">
+            <summary>
+            Gets or sets the additional parameters.
+            </summary>
+            <value>
+            The additional parameters.
+            </value>
+        </member>
+        <member name="P:Intuit.Ipp.Security.OAuth2RequestValidator.Key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+            <value>
+            The asymmetric algorithm key.
+            </value>
+        </member>
+        <member name="M:Intuit.Ipp.Security.OAuth2RequestValidator.Authorize(System.Net.WebRequest,System.String)">
+            <summary>
+            Authorizes the specified request.
+            </summary>
+            <param name="webRequest">The request.</param>
+            <param name="requestBody">The requestBody if form encoded parameters.</param>
+        </member>
+        <member name="T:Intuit.Ipp.Security.OAuthRequestValidator">
+            <summary>
+            OAuth implementation for Request validate contract.
+            </summary>
         </member>
         <member name="F:Intuit.Ipp.Security.OAuthRequestValidator.AuthorizationHeader">
             <summary>
@@ -45,45 +103,6 @@
             Initializes a new instance of the <see cref="T:Intuit.Ipp.Security.OAuthRequestValidator"/> class.
             </summary>
             <param name="applicationToken">The application token.</param>
-        </member>
-        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.Authorize(System.Net.WebRequest,System.String)">
-            <summary>
-            Authorizes the specified request.
-            </summary>
-            <param name="webRequest">The request.</param>
-            <param name="requestBody">The requestBody if form encoded parameters.</param>
-        </member>
-        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.CreateOAuthSessionWithConsumerContext(DevDefined.OAuth.Consumer.IOAuthConsumerContext)">
-            <summary>
-            Creates the OAuth session with consumer context.
-            </summary>
-            <param name="consumerContext">The consumer context.</param>
-            <returns>return IOAuthSession.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.GetOAuthHeaderForRequest(DevDefined.OAuth.Consumer.IOAuthSession,System.Net.WebRequest)">
-            <summary>
-            Gets the OAuth header for request.
-            </summary>
-            <param name="oauthSession">The OAuth session.</param>
-            <param name="webRequest">The web request.</param>
-            <returns>
-            Returns the OAuth header
-            </returns>
-        </member>
-        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.CreateConsumerContext(System.Boolean)">
-            <summary>
-            Creates the consumer context.
-            </summary>
-            <param name="isHeaderToBeAdded">if set to <c>true</c> header will be added to the request.</param>
-            <returns>
-            Returns IOAuthConsumerContext object.
-            </returns>
-        </member>
-        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.CreateAccessToken">
-            <summary>
-            Creates the access token.
-            </summary>
-            <returns>returns OAuth token.</returns>
         </member>
         <member name="P:Intuit.Ipp.Security.OAuthRequestValidator.AccessToken">
             <summary>
@@ -133,20 +152,48 @@
             The asymmetric algorithm key.
             </value>
         </member>
-        <member name="T:Intuit.Ipp.Security.NamespaceDoc">
+        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.Authorize(System.Net.WebRequest,System.String)">
             <summary>
-            Intuit.Ipp.Security consists of classes that are required to set security credentials to connect with 
-            Intuit services. By default it provides OAuth and user name validators. It can also use other Authorize methods such as SAML, OpenID, etc., to validate Intuit service requests.
+            Authorizes the specified request.
             </summary>
+            <param name="webRequest">The request.</param>
+            <param name="requestBody">The requestBody if form encoded parameters.</param>
+        </member>
+        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.CreateOAuthSessionWithConsumerContext(DevDefined.OAuth.Consumer.IOAuthConsumerContext)">
+            <summary>
+            Creates the OAuth session with consumer context.
+            </summary>
+            <param name="consumerContext">The consumer context.</param>
+            <returns>return IOAuthSession.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.GetOAuthHeaderForRequest(DevDefined.OAuth.Consumer.IOAuthSession,System.Net.WebRequest)">
+            <summary>
+            Gets the OAuth header for request.
+            </summary>
+            <param name="oauthSession">The OAuth session.</param>
+            <param name="webRequest">The web request.</param>
+            <returns>
+            Returns the OAuth header
+            </returns>
+        </member>
+        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.CreateConsumerContext(System.Boolean)">
+            <summary>
+            Creates the consumer context.
+            </summary>
+            <param name="isHeaderToBeAdded">if set to <c>true</c> header will be added to the request.</param>
+            <returns>
+            Returns IOAuthConsumerContext object.
+            </returns>
+        </member>
+        <member name="M:Intuit.Ipp.Security.OAuthRequestValidator.CreateAccessToken">
+            <summary>
+            Creates the access token.
+            </summary>
+            <returns>returns OAuth token.</returns>
         </member>
         <member name="T:Intuit.Ipp.Security.SecurityConstants">
             <summary>
             Constants for security assembly.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.Security.SecurityConstants.QBNCOOKIEPREFIX">
-            <summary>
-            Qbn Cookie Prefix value.
             </summary>
         </member>
         <member name="F:Intuit.Ipp.Security.SecurityConstants.SEMICOLONSTRING">
@@ -181,59 +228,7 @@
         </member>
         <member name="M:Intuit.Ipp.Security.SecurityConstants.#cctor">
             <summary>
-            Initializes static members of the <see cref="T:Intuit.Ipp.Security.SecurityConstants"/> class.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.Security.CookieBasedRequestValidator">
-            <summary>
-            IAM Cookie implementation for Request validate contract.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.Security.CookieBasedRequestValidator.iamCookie">
-            <summary>
-            The qbn cookie string
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.Security.CookieBasedRequestValidator.appToken">
-            <summary>
-            The Application Token
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.Security.CookieBasedRequestValidator.#ctor(System.String,System.String)">
-            <summary>
-            Initializes a new instance of the CookieBasedRequestValidator class.
-            </summary>
-            <param name="iamCookie">The iam cookie.</param>
-            <param name="appToken">Application Token.</param>
-        </member>
-        <member name="M:Intuit.Ipp.Security.CookieBasedRequestValidator.#ctor(System.Web.HttpCookieCollection,System.String)">
-            <summary>
-            Initializes a new instance of the CookieBasedRequestValidator class.
-            </summary>
-            <param name="cookieCollection">The cookie collection.</param>
-            <param name="appToken">Application Token.</param>
-        </member>
-        <member name="M:Intuit.Ipp.Security.CookieBasedRequestValidator.Authorize(System.Net.WebRequest,System.String)">
-            <summary>
-            Authorizes the specified request.
-            </summary>
-            <param name="webRequest">The request.</param>
-            <param name="requestBody">The body if form encoded parameters.</param>
-        </member>
-        <member name="M:Intuit.Ipp.Security.CookieBasedRequestValidator.IamValidationTime">
-            <summary>
-             This method gives seconds since the Unix epoch
-            </summary>
-            <returns> Seconds since the Unix epoch</returns>
-        </member>
-        <member name="P:Intuit.Ipp.Security.CookieBasedRequestValidator.AppToken">
-            <summary>
-            Gets or sets the The Application Token
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.Security.CookieBasedRequestValidator.IamCookie">
-            <summary>
-            Gets the qbn cookie string
+            Initializes static members of the <see cref="T:Intuit.Ipp.Security.SecurityConstants" /> class.
             </summary>
         </member>
     </members>

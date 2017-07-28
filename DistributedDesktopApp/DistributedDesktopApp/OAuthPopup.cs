@@ -98,6 +98,7 @@ namespace DistributedDesktopApp
                 _ippRealmOAuthProfile.accessSecret = accessToken.TokenSecret;
                 _ippRealmOAuthProfile.expirationDateTime = DateTime.Now.AddMonths(6);
                 this.DialogResult = DialogResult.OK;
+                oauthBrowser.Stop();//New    
                 this.Close();
             }
         }

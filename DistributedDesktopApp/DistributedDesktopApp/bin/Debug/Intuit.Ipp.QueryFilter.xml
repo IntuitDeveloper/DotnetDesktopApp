@@ -4,6 +4,13 @@
         <name>Intuit.Ipp.QueryFilter</name>
     </assembly>
     <members>
+        <member name="T:Intuit.Ipp.QueryFilter.NamespaceDoc">
+            <summary>
+            Intuit.Ipp.QueryFilter has classes related to query filters. 
+            It has classes: ExpressionVisitor class: used to visit the different types 
+            of expressions, QueryService class: used to execute the IDS queries and return appropriate responses, StringExtensions class: has extension methods for string data type.
+            </summary>
+        </member>
         <member name="T:Intuit.Ipp.QueryFilter.ExpressionVisitor">
             <summary>
             Contains methods used to parse the expression tree.
@@ -117,32 +124,25 @@
               Looks up a localized string similar to The Response Stream was null or empty..
             </summary>
         </member>
-        <member name="T:Intuit.Ipp.QueryFilter.NamespaceDoc">
+        <member name="T:Intuit.Ipp.QueryFilter.QueryOperationType">
             <summary>
-            Intuit.Ipp.QueryFilter has classes related to query filters. 
-            It has classes: ExpressionVisitor class: used to visit the different types 
-            of expressions, QueryService class: used to execute the IDS queries and return appropriate responses, StringExtensions class: has extension methods for string data type.
+            Contains enumeration value for Query Operation Type.
             </summary>
         </member>
-        <member name="T:Intuit.Ipp.QueryFilter.StringExtensions">
+        <member name="F:Intuit.Ipp.QueryFilter.QueryOperationType.query">
             <summary>
-            Contains extension methods for the string data type.
+            Entity query.
             </summary>
         </member>
-        <member name="M:Intuit.Ipp.QueryFilter.StringExtensions.In(System.String,System.String[])">
+        <member name="F:Intuit.Ipp.QueryFilter.QueryOperationType.report">
             <summary>
-            Determines whether a sequence contains a specified element by using the default equality comparer.
+            Report query.
             </summary>
-            <param name="value">A sequence in which to locate a value.</param>
-            <param name="values">The value to locate in the sequence.</param>
-            <returns>True if the source sequence contains an element that has the specified value otherwise, false.</returns>
         </member>
-        <member name="M:Intuit.Ipp.QueryFilter.StringExtensions.RemoveWhiteSpaces(System.String)">
+        <member name="F:Intuit.Ipp.QueryFilter.QueryOperationType.changedata">
             <summary>
-            Removes unwanted whitespaces from the string.
+            Change Data query.
             </summary>
-            <param name="value">The value to remove the whitespaces from.</param>
-            <returns>String with single whitespace between elements.</returns>
         </member>
         <member name="T:Intuit.Ipp.QueryFilter.QueryService`1">
             <summary>
@@ -239,8 +239,8 @@
             Usage:
             Use the query service created and invoke the ToIdsQuery method to obtain the simple query as string.
             <code>
-            string customerQueryValue = customerContext.Where(c =&gt; c.MetaData.CreateTime &gt; this.dateTime).ToIdsQuery();
-            string invoiceQueryValue = invoiceContext.Select(i =&gt; new { i.Id, i.status }).ToIdsQuery();
+            string customerQueryValue = customerContext.Where(c => c.MetaData.CreateTime > this.dateTime).ToIdsQuery();
+            string invoiceQueryValue = invoiceContext.Select(i => new { i.Id, i.status }).ToIdsQuery();
             </code>
             Invoke the ExecuteMultipleEntityQueries method with the read only collection of the queries. This method can throw exception so surround the method with a try catch block.
             <code>
@@ -269,6 +269,13 @@
             <param name="isToIdsQueryMethod">If true executes the ids query and returns the response else does not execute the ids query.</param>
             <param name="idsQuery">The generated ids query.</param>
             <returns>A collection of items of type T.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.QueryFilter.QueryService`1.VisitSelectCallExpression(Intuit.Ipp.LinqExtender.Ast.SelectExpression)">
+            <summary>
+            Visit Select Call expression.
+            </summary>
+            <param name="selectExpression">Select expression.</param>
+            <returns>The LinqExtender Expression.</returns>
         </member>
         <member name="M:Intuit.Ipp.QueryFilter.QueryService`1.VisitTypeExpression(Intuit.Ipp.LinqExtender.Ast.TypeExpression)">
             <summary>
@@ -346,6 +353,13 @@
             <param name="type">The type of the value.</param>
             <param name="value">The value of the object.</param>
         </member>
+        <member name="M:Intuit.Ipp.QueryFilter.QueryService`1.StringValueOf(System.Enum)">
+            <summary>
+            Returns the XmlEnumAttribute name if present else returns the enum object.
+            Add any specific types in switch case if needed in future
+            </summary>
+            <param name="value">The value of the object.</param>
+        </member>
         <member name="M:Intuit.Ipp.QueryFilter.QueryService`1.GetIdsDateTimeFormat(System.Object)">
             <summary>
             Gets the string value of the date time if the parameter is of type datetime.
@@ -367,25 +381,25 @@
             <param name="exprssion"></param>
             <returns></returns>
         </member>
-        <member name="T:Intuit.Ipp.QueryFilter.QueryOperationType">
+        <member name="T:Intuit.Ipp.QueryFilter.StringExtensions">
             <summary>
-            Contains enumeration value for Query Operation Type.
+            Contains extension methods for the string data type.
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.QueryFilter.QueryOperationType.query">
+        <member name="M:Intuit.Ipp.QueryFilter.StringExtensions.In(System.String,System.String[])">
             <summary>
-            Entity query.
+            Determines whether a sequence contains a specified element by using the default equality comparer.
             </summary>
+            <param name="value">A sequence in which to locate a value.</param>
+            <param name="values">The value to locate in the sequence.</param>
+            <returns>True if the source sequence contains an element that has the specified value otherwise, false.</returns>
         </member>
-        <member name="F:Intuit.Ipp.QueryFilter.QueryOperationType.report">
+        <member name="M:Intuit.Ipp.QueryFilter.StringExtensions.RemoveWhiteSpaces(System.String)">
             <summary>
-            Report query.
+            Removes unwanted whitespaces from the string.
             </summary>
-        </member>
-        <member name="F:Intuit.Ipp.QueryFilter.QueryOperationType.changedata">
-            <summary>
-            Change Data query.
-            </summary>
+            <param name="value">The value to remove the whitespaces from.</param>
+            <returns>String with single whitespace between elements.</returns>
         </member>
     </members>
 </doc>

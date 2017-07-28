@@ -4,101 +4,138 @@
         <name>Intuit.Ipp.PlatformService</name>
     </assembly>
     <members>
-        <member name="T:Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs">
+        <member name="T:Intuit.Ipp.PlatformService.PlatformConfig">
             <summary>
-            GetEntitlementAndUserRoleValuesCallCompleted Event Arguments.
+            This class contains platform serveice URLs which can be reset by users.
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs.results">
+        <member name="F:Intuit.Ipp.PlatformService.PlatformConfig.disconnectUrl">
             <summary>
-            The result of the asynchronous operation.
+            The Disconnect URL.
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs.error">
+        <member name="F:Intuit.Ipp.PlatformService.PlatformConfig.currentUserUrl">
             <summary>
-            Ids Exception.
+            The Get Current User URL.
             </summary>
         </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs.#ctor(Intuit.Ipp.Data.EntitlementAndUserRoleInfo,Intuit.Ipp.Exception.IdsException)">
+        <member name="F:Intuit.Ipp.PlatformService.PlatformConfig.reconnectUrl">
             <summary>
-            Initializes a new instance of the GetEntitlementAndUserRoleValuesCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
+            The Reconnect URL.
             </summary>
         </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs.Error">
+        <member name="M:Intuit.Ipp.PlatformService.PlatformConfig.GetDisconnectUrl">
             <summary>
-            Gets Ids Exception.
+            Get the disconnect URL.
             </summary>
         </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs">
+        <member name="M:Intuit.Ipp.PlatformService.PlatformConfig.SetDisconnectUrl(System.String)">
             <summary>
-            GetBillingInfoCallCompleted Event Arguments.
+            Set the disconnect URL.
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs.results">
+        <member name="M:Intuit.Ipp.PlatformService.PlatformConfig.GetCurrentUserUrl">
             <summary>
-            The result of the asynchronous operation.
+            Get the current user URL.
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs.error">
+        <member name="M:Intuit.Ipp.PlatformService.PlatformConfig.SetCurrentUserUrl(System.String)">
             <summary>
-            Ids Exception.
+            Set the current user URL.
             </summary>
         </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs.#ctor(Intuit.Ipp.Data.BillingInfo,Intuit.Ipp.Exception.IdsException)">
+        <member name="M:Intuit.Ipp.PlatformService.PlatformConfig.GetReconnectUrl">
             <summary>
-            Initializes a new instance of the GetBillingInfoCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
+            Get the reconnect URL.
             </summary>
         </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs.Error">
+        <member name="M:Intuit.Ipp.PlatformService.PlatformConfig.SetReconnectUrl(System.String)">
             <summary>
-            Gets Ids Exception.
+            Set the reconnect URL.
             </summary>
         </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs">
+        <member name="T:Intuit.Ipp.PlatformService.NamespaceDoc">
             <summary>
-            GetPaidSubscriptionCallCompleted Event Arguments.
+            Intuit.Ipp.PlatformService is used to call Platform Service APIs such as, GetUserInfo, GetRoleInfo, GetFreeSubscriptionList, GetPaidSubscriptionList, and so forth.
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs.results">
+        <member name="T:Intuit.Ipp.PlatformService.PlatformException">
             <summary>
-            The result of the asynchronous operation.
+            PlatformException class
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs.error">
+        <member name="P:Intuit.Ipp.PlatformService.PlatformException.ErrorCode">
             <summary>
-            Ids Exception.
+            ErrorCode
             </summary>
         </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs.#ctor(System.Collections.ObjectModel.Collection{Intuit.Ipp.Data.PaidSubscription},Intuit.Ipp.Exception.IdsException)">
+        <member name="P:Intuit.Ipp.PlatformService.PlatformException.ErrorMessage">
             <summary>
-            Initializes a new instance of the GetPaidSubscriptionCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
+            ErrorMessage
             </summary>
         </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs.Error">
+        <member name="P:Intuit.Ipp.PlatformService.PlatformException.ServerTime">
             <summary>
-            Gets Ids Exception.
+            ServerTime
             </summary>
+        </member>
+        <member name="M:Intuit.Ipp.PlatformService.PlatformException.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.PlatformService.PlatformClient">
+            <summary>
+            PlatformClient class
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.PlatformService.PlatformService">
+            <summary>
+            PlatformService class
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.PlatformService.PlatformService.Disconnect(System.String,System.String,System.String,System.String)">
+            <summary>
+            Disconnect a user from QBO.
+            </summary>
+            <param name="consumerKey">OAuth consumerKey.</param>
+            <param name="consumerSecret">OAuth consumerSecret.</param>
+            <param name="accessToken">OAuth accessToken.</param>
+            <param name="accessTokenSecret">OAuth accessTokenSecret.</param>
+            <returns>void.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.PlatformService.PlatformService.ParseDisconnectResponse(System.String)">
+            <summary>
+            Parse DisconnectResponse
+            </summary>
+            <param name="response">Disconnect Response string</param>        
+            <returns>void.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.PlatformService.PlatformService.GetPlatformException(System.Xml.XmlDocument,System.Xml.XmlNamespaceManager)">
+            <summary>
+            GetPlatformException
+            </summary>  
+            <param name="xmldoc">xmldoc</param>  
+            <param name="nsmgr">nameSpaceManager</param>  
+            <returns>PlatformException</returns>
+        </member>
+        <member name="M:Intuit.Ipp.PlatformService.PlatformService.Reconnect(System.String,System.String,System.String,System.String)">
+            <summary>
+            Reconnect
+            </summary>  
+            <param name="xmldoc">xmldoc</param>  
+            <param name="nsmgr">nameSpaceManager</param>  
+            <returns>Dictionary</returns>
+        </member>
+        <member name="M:Intuit.Ipp.PlatformService.PlatformService.GetCurrentUser(System.String,System.String,System.String,System.String)">
+            <summary>
+            GetCurrentUser
+            </summary>  
+            <param name="consumerKey">OAuth consumerKey.</param>
+            <param name="consumerSecret">OAuth consumerSecret.</param>
+            <param name="accessToken">OAuth accessToken.</param>
+            <param name="accessTokenSecret">OAuth accessTokenSecret.</param>
+            <returns>Dictionary</returns>
         </member>
         <member name="T:Intuit.Ipp.PlatformService.Properties.Resources">
             <summary>
@@ -286,11 +323,6 @@
               Looks up a localized string similar to Must provide service provider id..
             </summary>
         </member>
-        <member name="P:Intuit.Ipp.PlatformService.Properties.Resources.MustProvideTargetUrl">
-            <summary>
-              Looks up a localized string similar to Must provide target url..
-            </summary>
-        </member>
         <member name="P:Intuit.Ipp.PlatformService.Properties.Resources.MustProvideUserId">
             <summary>
               Looks up a localized string similar to Must provide userId..
@@ -381,11 +413,6 @@
               Looks up a localized string similar to The Service context cannot be null..
             </summary>
         </member>
-        <member name="P:Intuit.Ipp.PlatformService.Properties.Resources.TicketParameterName">
-            <summary>
-              Looks up a localized string similar to ticket.
-            </summary>
-        </member>
         <member name="P:Intuit.Ipp.PlatformService.Properties.Resources.TrailSubscriptionNotRetuned">
             <summary>
               Looks up a localized string similar to List of trail application subscriptions not returned..
@@ -396,1531 +423,29 @@
               Looks up a localized string similar to User text cannot be null..
             </summary>
         </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServicesExtensions">
+        <member name="T:Intuit.Ipp.PlatformService.User">
             <summary>
-            TODO: Update summary.
+            User class for PlatfromService
             </summary>
         </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.platformService">
+        <member name="P:Intuit.Ipp.PlatformService.User.FirstName">
             <summary>
-            Platform Service object.
+            FirstName
             </summary>
         </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetIsRealmQboasync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
+        <member name="P:Intuit.Ipp.PlatformService.User.LastName">
             <summary>
-            Check if Realm is QBO realm or not.
+            LastName
             </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The database identifier.</param>
         </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetIsRealmQboCompleted(System.Object,Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs)">
+        <member name="P:Intuit.Ipp.PlatformService.User.EmailAddress">
             <summary>
-            Event Handler for async request.
+            EmailAddress
             </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="callCompletedEventArgs">Async Call Completed Event Args.</param>
         </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetRoleInfoAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
+        <member name="P:Intuit.Ipp.PlatformService.User.IsVerified">
             <summary>
-            Roles defined in specified application.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetRoleInfoCompleted(System.Object,Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetUserAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.Boolean)">
-            <summary>
-            Generic user info for specified email or User Id.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="emailOrScreenName">The email or screen name.</param>
-            <param name="showDevAccount">if set to <c>true</c> [show dev account].</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGeUserCompleted(System.Object,Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.AddUserToRoleAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String)">
-            <summary>
-            Add the specified role to the user in this application
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="databaseId">The application databaseId.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnAddUserToRoleCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.RemoveUserAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String)">
-            <summary>
-            Convenience function that will query a user's roles and then remove them one by one.
-            If the user is referenced by any User-type field in the database, that user will remain visible in the user list with a role of "none".
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="userId">The user id.</param>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnRemoveUserCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetUserRoleAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String)">
-            <summary>
-            Gets the user role.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="userId">The user id.</param>
-            <param name="databaseId">The database identifier.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetUserRoleCompleted(System.Object,Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.ProvisionUserAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Create provisional user account for given user information, so user can be invited and assigned roles.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="email">The email.</param>
-            <param name="firstName">The first name.</param>
-            <param name="lastName">The last name.</param>
-            <param name="roleId">The role Id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnProvisionUserCompleted(System.Object,Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.RemoveUserFromRoleAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String)">
-            <summary>
-            Removes role for specified user in specified instance.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="databaseId">The application db id.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnRemoveUserFromRoleCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.SendInvitationAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String)">
-            <summary>
-            Send an invitation email to the specified user-id. Optionally provide custom text to be included in the email.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="userId">The user id.</param>
-            <param name="userText">The user text.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnSendInvitationCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetUserRolesAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Gets the user roles.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The application db id.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetUserRolesCompleted(System.Object,Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.AttachIdsRealmAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String)">
-            <summary>
-            Attach the IDS Realm
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="realmId">The realm Id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnAttachIdsRealmCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.DetachIdsRealmAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String)">
-            <summary>
-            Detach the IDS Realm.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="realmId">The realm Id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnDetachIdsRealmCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.RetrieveAdministratorsForAllProductsAsync(Intuit.Ipp.PlatformServices.PlatformService)">
-            <summary>
-            Retrieves List of Administrators for all published applications.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnRetrieveAdministratorsForAllProductCompleted(System.Object,Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetBillingStatusAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Retrieves BillingInfo structure describing billing status for application instance.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetBillingStatusCompleted(System.Object,Intuit.Ipp.PlatformServices.GetBillingInfoCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetIdsRealmAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Get the ID of the IDS Realm the application instance is associated with.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetIdsRealmCompleted(System.Object,Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetEntitlementValuesAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Retrieve list of entitlements
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetEntitlementInfoCompleted(System.Object,Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetEntitlementAndUserRoleValuesAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Retrieve list of entitlements and role info.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetEntitlementAndUserRoleValuesCompleted(System.Object,Intuit.Ipp.PlatformServices.GetEntitlementAndUserRoleValuesCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.AddRealmAccessForUserAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String,System.String)">
-            <summary>
-            Adds the realm access for user.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="realmId">The realm id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnAddRealmAccessForUserCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.RetrieveIppDevCustomerDetailAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Returns the list of paid application subscriptions for all of your published applications.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="accountId">The account id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnRetrieveIppDevCustomerDetailCompleted(System.Object,Intuit.Ipp.PlatformServices.GetPaidSubscriptionCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.RetrieveIppDevFreeTrialUsageAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String)">
-            <summary>
-            Returns the list of free application subscriptions for all of your published applications.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="accountId">The account id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnRetrieveIppDevFreeTrialUsageCompleted(System.Object,Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.GetPseudonymAccessTokenAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Gets the pseudonym access token.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="authIdPseudonym">The authIdPseudonym.</param>
-            <param name="realmIdPseudonym">The realmIdPseudonym.</param>
-            <param name="serviceProviderId">The service provider id.</param>
-            <param name="keyFilePath">The key file path.</param>
-            <param name="keyFilePassword">The key file password.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnGetPseudonymAccessTokenCompleted(System.Object,Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.AssertFederatedIdentityAsync(Intuit.Ipp.PlatformServices.PlatformService,System.String,System.String,System.String)">
-            <summary>
-            Asserts the federated identity.
-            </summary>
-            <param name="platformService">Platform Serivce object.</param>
-            <param name="realmId">The realm id.</param>
-            <param name="serviceProviderId">The service provider ID.</param>
-            <param name="targetUrl">The target URL.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServicesExtensions.PlatformServiceAsync_OnAssertFederatedIdentityCompleted(System.Object,Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.NamespaceDoc">
-            <summary>
-            Intuit.Ipp.PlatformService is used to call Platform Service APIs such as, GetUserInfo, GetRoleInfo, GetFreeSubscriptionList, GetPaidSubscriptionList, and so forth.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformService">
-            <summary>
-            Intuit Partner Platform Services 
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformService.serviceContext">
-            <summary>
-            The Service context object.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformService.restRequestHandler">
-            <summary>
-            The Rest request handler object.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformService.requestXmlDocument">
-            <summary>
-            Request Xml Document
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.#ctor(Intuit.Ipp.Core.ServiceContext)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Intuit.Ipp.PlatformServices.PlatformService"/> class.
-            Usage:
-             This class can be used to call the platform service APIs with service context as argument.
-            Syntax: (If OAuth authentication model is used)
-             OAuthRequestValidator oauthValidator = new OAuthRequestValidator(accessToken,  accessTokenSecret,  consumerKey,  consumerSecret);
-             ServiceContext context  = new ServiceContext(oauthValidator, appToken);
-             PlatformService platformService = new PlatformService(context);
-            Sample:
-             OAuthRequestValidator oauthValidator = new OAuthRequestValidator("accessToken","accessTokenSecret", "consumerKey", "consumerSecret");
-             ServiceContext context  = new ServiceContext("oauthValidator", "appToken");
-             PlatformService platformService = new PlatformService(context); 
-            </summary>
-            <param name="serviceContext">IPP Service Context</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetIsRealmQbo(System.String)">
-            <summary>
-            Check if Realm is QBO realm or not.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-            <returns>Returns true if realm attached to this application is QBO realm; Otherwise false.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetRoleInfo(System.String)">
-            <summary>
-            Roles defined in specified application.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-            <returns>Returns the roles defined in specified application.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetUser(System.String,System.Boolean)">
-            <summary>
-            Generic user info for specified email or User Id.
-            </summary>
-            <param name="emailOrScreenName">The email or screen name.</param>
-            <param name="showDevAccount">if set to <c>true</c> [show dev account].</param>
-            <returns>
-            Returns generic user info for specified email or User Id.
-            </returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.AddUserToRole(System.String,System.String,System.String)">
-            <summary>
-            Add the specified role to the user in this application
-            </summary>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="databaseId">The application databaseId.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.RemoveUser(System.String,System.String)">
-            <summary>
-            Convenience function that will query a user's roles and then remove them one by one.
-            If the user is referenced by any User-type field in the database, that user will remain visible in the user list with a role of "none".
-            </summary>
-            <param name="userId">The user id.</param>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetUserRole(System.String,System.String)">
-            <summary>
-            Gets the user role.
-            </summary>
-            <param name="userId">The user id.</param>
-            <param name="databaseId">The database identifier.</param>        
-            <returns>UserInfo structure with role information, or null</returns>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.ProvisionUser(System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Create provisional user account for given user information, so user can be invited and assigned roles.
-            </summary>
-            <param name="email">The email.</param>
-            <param name="firstName">The first name.</param>
-            <param name="lastName">The last name.</param>
-            <param name="roleId">The role Id.</param>
-            <param name="databaseId">The application db id.</param>
-            <returns>
-            Returns the unique internal user-Id for the provisioned user account
-            </returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.RemoveUserFromRole(System.String,System.String,System.String)">
-            <summary>
-            Removes role for specified user in specified instance.
-            </summary>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="databaseId">The application db id.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.SendInvitation(System.String,System.String,System.String)">
-            <summary>
-            Send an invitation email to the specified user-id. Optionally provide custom text to be included in the email.
-            </summary>
-            <param name="userId">The user id.</param>
-            <param name="userText">The user text.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetUserRoles(System.String)">
-            <summary>
-            Gets the user roles.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <returns>Returns the the user roles.</returns>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.AttachIdsRealm(System.String,System.String)">
-            <summary>
-            Attach the IDS Realm
-            </summary>
-            <param name="realmId">The realm Id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.DetachIdsRealm(System.String,System.String)">
-            <summary>
-            Detach the IDS Realm.
-            </summary>
-            <param name="realmId">The realm Id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.RetrieveAdministratorsForAllProducts">
-            <summary>
-            Retrieves List of Administrators for all published applications.
-            </summary>
-            <returns>Returns the list of Administrators for all published applications.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetBillingStatus(System.String)">
-            <summary>
-            Retrieves BillingInfo structure describing billing status for application instance.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-            <returns>Returns billing info</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetIdsRealm(System.String)">
-            <summary>
-            Get the ID of the IDS Realm the application instance is associated with.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <returns>Returns the realm Id.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetEntitlementValues(System.String)">
-            <summary>
-            Retrieve list of entitlements
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <returns>Returns billing plan and entitlements for the application.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetEntitlementAndUserRoleValues(System.String)">
-            <summary>
-            Retrieve list of entitlements and role info.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <returns>Returns billing plan, entitlements for the application, and the user roles of the user</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.AddRealmAccessForUser(System.String,System.String,System.String,System.String)">
-            <summary>
-            Adds the realm access for user.
-            </summary>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="realmId">The realm id.</param>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.RetrieveIppDevCustomerDetail(System.String)">
-            <summary>
-            Returns the list of paid application subscriptions for all of your published applications.
-            </summary>
-            <param name="accountId">The account id.</param>
-            <returns>Returns the paid subscription details</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.RetrieveIppDevFreeTrialUsage(System.String)">
-            <summary>
-            Returns the list of free application subscriptions for all of your published applications.
-            </summary>
-            <param name="accountId">The account id.</param>
-            <returns>Returns the list of free or trial application subscriptions for all of your published applications</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.GetPseudonymAccessToken(System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Gets the pseudonym access token.
-            </summary>
-            <param name="authIdPseudonym">The authIdPseudonym.</param>
-            <param name="realmIdPseudonym">The realmIdPseudonym.</param>
-            <param name="serviceProviderId">The service provider id.</param>
-            <param name="keyFilePath">The key file path.</param>
-            <param name="keyFilePassword">The key file password.</param>
-            <returns>
-            Returns the access token
-            </returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.AssertFederatedIdentity(System.String,System.String,System.String)">
-            <summary>
-            Asserts the federated identity.
-            </summary>
-            <param name="realmId">The realm id.</param>
-            <param name="serviceProviderId">The service provider ID.</param>
-            <param name="targetUrl">The target URL.</param>
-            <returns>Result as AssertFederatedIdentityResult.</returns>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformService.InitializeRequestXmlDocument">
-            <summary>
-            Initializes the request XML document.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.ServiceContext">
-            <summary>
-            Gets Service Context object.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetIsRealmQboCompleted">
-            <summary>
-            Gets or sets OnGetIsRealmQboCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetRoleInfoCompleted">
-            <summary>
-            Gets or sets OnGetRoleInfoCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetUserCompleted">
-            <summary>
-            Gets or sets OnGetUserCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnAddUserToRoleCompleted">
-            <summary>
-            Gets or sets OnAddUserToRoleCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnRemoveUserCompleted">
-            <summary>
-            Gets or sets OnAddUserToRoleCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetUserRoleCompleted">
-            <summary>
-            Gets or sets OnGetUserRoleCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnProvisionUserCompleted">
-            <summary>
-            Gets or sets OnProvisionUserCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnRemoveUserFromRoleCompleted">
-            <summary>
-            Gets or sets OnRemoveUserFromRoleCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnSendInvitationCompleted">
-            <summary>
-            Gets or sets OnSendInvitationCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetUserRolesCompleted">
-            <summary>
-            Gets or sets OnGetUserInfoCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnAttachIdsRealmCompleted">
-            <summary>
-            Gets or sets OnAttachIdsRealmCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnDetachIdsRealmCompleted">
-            <summary>
-            Gets or sets OnDetachIdsRealmCompleted event.
-            </summary> 
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnRetrieveAdministratorsForAllProductCompleted">
-            <summary>
-            Gets or sets OnRetrieveAdministratorsForAllProductCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetBillingStatusCompleted">
-            <summary>
-            Gets or sets OnGetBillingStatusCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetIdsRealmCompleted">
-            <summary>
-            Gets or sets OnGetIdsRealmCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetEntitlementInfoCompleted">
-            <summary>
-            Gets or sets OnGetEntitlementInfoCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetEntitlementAndUserRoleValuesCompleted">
-            <summary>
-            Gets or sets OnGetEntitlementAndUserRoleValuesCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnAddRealmAccessForUserCompleted">
-            <summary>
-            Gets or sets OnAddRealmAccessForUserCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnRetrieveIppDevCustomerDetailCompleted">
-            <summary>
-            Gets or sets OnRetrieveIppDevCustomerDetailCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnRetrieveIppDevFreeTrialUsageCompleted">
-            <summary>
-            Gets or sets OnRetrieveIppDevFreeTrialUsageCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnGetPseudonymAccessTokenCompleted">
-            <summary>
-            Gets or sets OnGetPseudonymAccessTokenCompleted event.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.PlatformService.OnAssertFederatedIdentityCompleted">
-            <summary>
-            Gets or sets OnAssertFederatedIdentityCompleted event.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs">
-            <summary>
-            GetUserCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs.#ctor(Intuit.Ipp.Data.UserInfo,Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetUserCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetUserCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs">
-            <summary>
-            GetStringCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs.#ctor(System.String,Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetStringCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetStringCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs">
-            <summary>
-            AssertFederatedIdentityCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs.#ctor(Intuit.Ipp.Data.AssertFederatedIdentityResult,Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the AssertFederatedIdentityCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.AssertFederatedIdentityCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceAsync">
-            <summary>
-            Intuit Partner Platform Services 
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformServiceAsync.serviceContext">
-            <summary>
-            The Service context object.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformServiceAsync.restRequestHandler">
-            <summary>
-            The Rest request handler object.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.PlatformServiceAsync.requestXmlDocument">
-            <summary>
-            Request Xml Document
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.#ctor(Intuit.Ipp.Core.ServiceContext)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Intuit.Ipp.PlatformServices.PlatformServiceAsync"/> class.
-            Usage:
-             This class can be used to call the platform service APIs with service context as argument.
-            Syntax: (If OAuth authentication model is used)
-             OAuthRequestValidator oauthValidator = new OAuthRequestValidator(accessToken,  accessTokenSecret,  consumerKey,  consumerSecret);
-             ServiceContext context  = new ServiceContext(oauthValidator, appToken);
-             PlatformService platformService = new PlatformService(context);
-            Sample:
-             OAuthRequestValidator oauthValidator = new OAuthRequestValidator("accessToken","accessTokenSecret", "consumerKey", "consumerSecret");
-             ServiceContext context  = new ServiceContext("oauthValidator", "appToken");
-             PlatformService platformService = new PlatformService(context); 
-            </summary>
-            <param name="serviceContext">IPP Service Context</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetIsRealmQboAsync(System.String)">
-            <summary>
-            Check if Realm is QBO realm or not.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetIsRealmQboAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetRoleInfoAsync(System.String)">
-            <summary>
-            Roles defined in specified application.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetRoleInfoAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetUserAsync(System.String,System.Boolean)">
-            <summary>
-            Generic user info for specified email or User Id.
-            </summary>
-            <param name="emailOrScreenName">The email or screen name.</param>
-            <param name="showDevAccount">if set to <c>true</c> [show dev account].</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetUserAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AddUserToRoleAsync(System.String,System.String,System.String)">
-            <summary>
-            Add the specified role to the user in this application
-            </summary>
-            <param name="databaseId">The application databaseId.</param>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AddUserToRoleAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RemoveUserAsync(System.String,System.String)">
-            <summary>
-            Convenience function that will query a user's roles and then remove them one by one.
-            If the user is referenced by any User-type field in the database, that user will remain visible in the user list with a role of "none".
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-            <param name="userId">The user id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetUserRoleAsync(System.String,System.String)">
-            <summary>
-            Gets the user role.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-            <param name="userId">The user id.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetUserRoleAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.ProvisionUserAsync(System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Create provisional user account for given user information, so user can be invited and assigned roles.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <param name="email">The email.</param>
-            <param name="firstName">The first name.</param>
-            <param name="lastName">The last name.</param>
-            <param name="roleId">The role Id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.ProvisionUserAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RemoveUserFromRoleAsync(System.String,System.String,System.String)">
-            <summary>
-            Removes role for specified user in specified instance.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RemoveUserFromRoleAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.SendInvitationAsync(System.String,System.String,System.String)">
-            <summary>
-            Send an invitation email to the specified user-id. Optionally provide custom text to be included in the email.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <param name="userId">The user id.</param>
-            <param name="userText">The user text.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.SendInvitationAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetUserRolesAsync(System.String)">
-            <summary>
-            Gets the user roles.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            Exceptions:
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetUserRolesAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AttachIdsRealmAsync(System.String,System.String)">
-            <summary>
-            Attach the IDS Realm
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <param name="realmId">The realm Id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AttachIdsRealmAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.DetachIdsRealmAsync(System.String,System.String)">
-            <summary>
-            Detach the IDS Realm.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <param name="realmId">The realm Id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.DetachIdsRealmAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RetrieveAdministratorsForAllProductsAsync">
-            <summary>
-            Retrieves List of Administrators for all published applications.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RetrieveAdministratorsForAllProductsAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetBillingStatusAsync(System.String)">
-            <summary>
-            Retrieves BillingInfo structure describing billing status for application instance.
-            </summary>
-            <param name="databaseId">The database identifier.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetBillingStatusAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetIdsRealmAsync(System.String)">
-            <summary>
-            Get the ID of the IDS Realm the application instance is associated with.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetIdsRealmAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetEntitlementValuesAsync(System.String)">
-            <summary>
-            Retrieve list of entitlements
-            </summary>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetEntitlementValuesAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetEntitlementAndUserRoleValuesAsync(System.String)">
-            <summary>
-            Retrieve list of entitlements and role info.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetEntitlementAndUserRoleValuesAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AddRealmAccessForUserAsync(System.String,System.String,System.String,System.String)">
-            <summary>
-            Adds the realm access for user.
-            </summary>
-            <param name="databaseId">The application db id.</param>
-            <param name="userId">The user id.</param>
-            <param name="roleId">The role id.</param>
-            <param name="realmId">The realm id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AddRealmAccessForUserAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RetrieveIppDevCustomerDetailAsync(System.String)">
-            <summary>
-            Returns the list of paid application subscriptions for all of your published applications.
-            </summary>
-            <param name="accountId">The account id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RetrieveIppDevCustomerDetailAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RetrieveIppDevFreeTrialUsageAsync(System.String)">
-            <summary>
-            Returns the list of free application subscriptions for all of your published applications.
-            </summary>
-            <param name="accountId">The account id.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.RetrieveIppDevFreeTrialUsageAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetPseudonymAccessTokenAsync(System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            Gets the pseudonym access token.
-            </summary>
-            <param name="authIdPseudonym">The authIdPseudonym.</param>
-            <param name="realmIdPseudonym">The realmIdPseudonym.</param>
-            <param name="serviceProviderId">The service provider id.</param>
-            <param name="keyFilePath">The key file path.</param>
-            <param name="keyFilePassword">The key file password.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.GetPseudonymAccessTokenAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AssertFederatedIdentityAsync(System.String,System.String,System.String)">
-            <summary>
-            Asserts the federated identity.
-            </summary>
-            <param name="realmId">The realm id.</param>
-            <param name="serviceProviderId">The service provider ID.</param>
-            <param name="targetUrl">The target URL.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.AssertFederatedIdentityAsync_OnCallCompleted(System.Object,Intuit.Ipp.Core.AsyncCallCompletedEventArgs)">
-            <summary>
-            Event Handler for async request.
-            </summary>
-            <param name="sender">Sender of the event</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.PlatformServiceAsync.InitializeRequestXmlDocument">
-            <summary>
-            Initializes the request XML document.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetIsRealmQboCompleted">
-            <summary>
-            On GetIsRealmQbo Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetRoleInfoCompleted">
-            <summary>
-            On GetRoleInfo Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetUserCompleted">
-            <summary>
-            On GetUser Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnAddUserToRoleCompleted">
-            <summary>
-            On AddUserToRole Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnRemoveUserCompleted">
-            <summary>
-            On AddUserToRole Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetUserRoleCompleted">
-            <summary>
-            On GetUserRole Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnProvisionUserCompleted">
-            <summary>
-            On ProvisionUser Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnRemoveUserFromRoleCompleted">
-            <summary>
-            On RemoveUserFromRole Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnSendInvitationCompleted">
-            <summary>
-            On SendInvitation Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetUserRolesCompleted">
-            <summary>
-            On GetUserInfo Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnAttachIdsRealmCompleted">
-            <summary>
-            On AttachIdsRealm Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnDetachIdsRealmCompleted">
-            <summary>
-            On DetachIdsRealm Completed event.
-            </summary> 
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnRetrieveAdministratorsForAllProductCompleted">
-            <summary>
-            On RetrieveAdministratorsForAllProduct Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetBillingStatusCompleted">
-            <summary>
-            On GetBillingStatus Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetIdsRealmCompleted">
-            <summary>
-            On GetIdsRealm Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetEntitlementInfoCompleted">
-            <summary>
-            On GetEntitlementInfo Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetEntitlementAndUserRoleValuesCompleted">
-            <summary>
-            On GetEntitlementAndUserRoleValues Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnAddRealmAccessForUserCompleted">
-            <summary>
-            On AddRealmAccessForUser Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnRetrieveIppDevCustomerDetailCompleted">
-            <summary>
-            On RetrieveIppDevCustomerDetail Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnRetrieveIppDevFreeTrialUsageCompleted">
-            <summary>
-            On RetrieveIppDevFreeTrialUsage Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnGetPseudonymAccessTokenCompleted">
-            <summary>
-            On GetPseudonymAccessToken Completed event.
-            </summary>
-        </member>
-        <member name="E:Intuit.Ipp.PlatformServices.PlatformServiceAsync.OnAssertFederatedIdentityCompleted">
-            <summary>
-            On AssertFederatedIdentity Completed event.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs">
-            <summary>
-            GetIsRealmQboCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs.#ctor(System.Boolean,Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetIsRealmQboCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs.Result">
-            <summary>
-            Gets a value indicating whether the result is true of false.
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetIsRealmQboCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs">
-            <summary>
-            GetRoleInfoCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs.#ctor(System.Collections.ObjectModel.Collection{Intuit.Ipp.Data.RoleInfo},Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetRoleInfoCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetRoleInfoCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs">
-            <summary>
-            GetAdminInfoCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs.#ctor(System.Collections.ObjectModel.Collection{Intuit.Ipp.Data.AdminInfo},Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetAdminInfoCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetAdminInfoCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback">
-            <summary>
-            TODO: Update summary.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.AsyncCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetIsRealmQboCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetRoleInfoCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetUserRoleCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetStringCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetUserRolesCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetAdminInfoCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetBillingInfoCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetEntitlementInfoCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetEntitlementAndUserRoleValuesCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetPaidSubscriptionCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.GetTrailSubscriptionCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.PlatformServiceCallback.AssertFederatedIdentityCallCompletedEventHandler">
-            <summary>
-            Event handler to handle asynchronous call back.
-            </summary>
-            <param name="sender">Sender of this event.</param>
-            <param name="asyncCallCompletedEventArgs">Async Call Completed Event Args.</param>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs">
-            <summary>
-            GetUserInfoCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs.#ctor(System.Collections.ObjectModel.Collection{Intuit.Ipp.Data.UserInfo},Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetUserInfoCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetUserInfoCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs">
-            <summary>
-            GetEntitlementInfoCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs.#ctor(Intuit.Ipp.Data.EntitlementInfo,Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetEntitlementInfoCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetEntitlementInfoCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
-            </summary>
-        </member>
-        <member name="T:Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs">
-            <summary>
-            GetTrailSubscriptionCallCompleted Event Arguments.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs.results">
-            <summary>
-            The result of the asynchronous operation.
-            </summary>
-        </member>
-        <member name="F:Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs.error">
-            <summary>
-            Ids Exception.
-            </summary>
-        </member>
-        <member name="M:Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs.#ctor(System.Collections.ObjectModel.Collection{Intuit.Ipp.Data.TrialSubscription},Intuit.Ipp.Exception.IdsException)">
-            <summary>
-            Initializes a new instance of the GetTrailSubscriptionCallCompletedEventArgs class.
-            /// </summary>
-            <param name="result">Result of the asynchronous operation.</param>
-            <param name="error">Ids Exception.</param>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs.Result">
-            <summary>
-            Gets Result returned from the Asynchronous call
-            </summary>
-        </member>
-        <member name="P:Intuit.Ipp.PlatformServices.GetTrailSubscriptionCallCompletedEventArgs.Error">
-            <summary>
-            Gets Ids Exception.
+            IsVerified
             </summary>
         </member>
     </members>
