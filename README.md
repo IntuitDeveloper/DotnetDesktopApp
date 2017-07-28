@@ -1,9 +1,9 @@
-OAuthHangoutSamples
+OAuthHangoutSamples for Oauth1 app- (obsolete- Use https://github.com/IntuitDeveloper/C2QB-library-for-Windows-CUI-and-GUI)
 ===================
 
 Samples from the IPP Google Hangout covering OAuth.
 Use the latest IE browser version to test this.
-
+.Net Framework 4.6.1 required
 
 Before Starting
 ===================
