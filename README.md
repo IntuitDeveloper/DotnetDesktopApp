@@ -1,3 +1,6 @@
+
+![Deprecated Banner](views/Callout.png)
+## Deprecated Repo  ( * this is deprecated repo * )
 OAuthHangoutSamples for Oauth1 app- (obsolete- Use https://github.com/IntuitDeveloper/C2QB-library-for-Windows-CUI-and-GUI)
 ===================
 
